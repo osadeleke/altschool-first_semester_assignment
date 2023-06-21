@@ -3,36 +3,196 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>AltSchool First Semester Assignment</title>
   </head>
-  <body>
-    <nav>
-      <p>My URLs</p>
-      <a href="features.html">Features</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="#">Analytics</a>
-      <a href="#">FAQs</a>
-      <a href="#">Log in</a>
-      <button>Try for Free</button>
-    </nav>
 
-    <div>
-      <h2>Optimize Your Online Experience with Our</h2>
-      <h2>Advanced URL Shortening Solution</h2>
+  <body>
+      <div class="header">
+        <div class="logo">
+          <img src="icons/icon1-chains.png" alt="scissors logo" />
+          <img src="icons/icon2-line.png" alt="" />
+          <h4>SCISSORS</h4>
+        </div>
+
+        <div class="navigation">
+          <nav>
+            <ul>
+              <li><a href="#">My URLs</a></li>
+              <li class="dropdown">
+                <a href="#features">Features</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Option 1</a></li>
+                  <li><a href="#">Option 2</a></li>
+                </ul>
+              </li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#">Analytics</a></li>
+              <li><a href="#faqs">FAQs</a></li>
+            </ul>
+          </nav>
+        </div>
+
+          <div class="header-end">
+            <a href="#">Log in</a>
+            <button class="log-in">Try for Free</button>
+          </div>
+      </div>
+
+      <div class="mid">
+        <h1 class="mid1">Optimize Your Online Experience with Our</h1>
+        <h1 class="mid2">Advanced URL Shortening Solution</h1>
+        <img src="icons/icon3-brush.png" alt="">
+        <h4 class="mid3">
+          Personalize your shortened URLs to align with your brand identity.
+          Utilize custom slugs,<br>branded links, and domain customization options
+          to reinforce your brand presence and<br>enhance user engagement.
+        </h4>
+        <p>Sign Up</p>
+        <p>Learn More</p>
+      </div>
+
+      <div>
+        <p>
+          Seamlessly transform your long URLs into concise and shareable links
+          with just few clicks
+        </p>
+      </div>
+    </div>
+
+    <div id="features">
+      <h2>One Stop.</h2>
+      <h2>Four Possibilities.</h2>
+      <h3>3M</h3>
+      <p>Active users</p>
+      <h3>60M</h3>
+      <p>Links & QR codes created</p>
+      <h3>1B</h3>
+      <p>Clicked & Scanned connections</p>
+      <h3>300k</h3>
+      <p>App integrations</p>
+      <h2>Why choose Scissors</h2>
       <p>
-        Personalize your shortened URLs to align with your brand identity.
-        Utilize custom slugs, branded links, and domain customization options to
-        reinforce your brand presence and enhance user engagement.
+        Scissors is the hub of everything that has to do with your link
+        management. We shorten your URLs allow you creating custom ones for your
+        personal, business, event usage. Our swift QR code creation, management
+        and usage tracking with advance analytics for all of these is second to
+        none.
       </p>
-      <p>Sign Up</p>
-      <p>Learn More</p>
+      <h3>URL Shortening</h3>
+      <p>
+        Scissors allows you to shorten URLs of your business, events. Shorten
+        your URL at scale, URL redirects.
+      </p>
+      <h3>Custom URLs</h3>
+      <p>
+        With Scissors, you can create custom URLSs, with the length you want! A
+        solution for socials and businesses.
+      </p>
+      <h3>QR Codes</h3>
+      <p>
+        Generate QR codes to your business, events. Brint your audience and
+        customers to your doorstep with this scan and go solution
+      </p>
+      <h3>Data Analytics</h3>
+      <p>
+        Receive data on the usage of either your shorted URL, custom URLs or
+        generated QR codes. Embedded to monitor progress.
+      </p>
+    </div>
+
+    <div id="pricing">
+      <h3>A price perfect for your needs.</h3>
+      <p>
+        From catering for your personal, business, event, socials needs, you can
+        be rest assured we have you in mind in our pricing.
+      </p>
+
+      <div>
+        <h4>Basic</h4>
+        <h3>Free</h3>
+        <p>Free plan for all users</p>
+        <ul>
+          <li>Unlimited URL Shortening</li>
+          <li>Basic Link Analytics</li>
+          <li>Customizable Short Links</li>
+          <li>Standard Support</li>
+          <li>Ad-supported</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Professional</h4>
+        <h3>$15/month</h3>
+        <p>Ideal for business creators</p>
+        <ul>
+          <li>Enhanced Link Analytics</li>
+          <li>Custom Branded Domains</li>
+          <li>Advanced Link Customization</li>
+          <li>Priority Support</li>
+          <li>Ad-free Experience</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Teams</h4>
+        <h3>$25/month</h3>
+        <p>Share with up to 10 users</p>
+        <ul>
+          <li>Team collaboration</li>
+          <li>User Roles and Permissions</li>
+          <li>Enhanced Security</li>
+          <li>API Access</li>
+          <li>Dedicated Account Manager</li>
+        </ul>
+      </div>
+
+      <button>Get custom Pricing</button>
+      <button>Select Pricing</button>
     </div>
 
     <div>
+      <form action="">
+        <input type="text" placeholder="Paste URL here..." />
+        <br />
+        <br />
+        <input type="text" />
+      </form>
+    </div>
+
+    <div id="faqs">
+      <h2>FAQs</h2>
+      <h4>How does URL Shortening work?</h4>
       <p>
-        Seamlessly transform your long URLs into concise and shareable links
-        with just few clicks
+        URL shortening works by taking a long URL and creating a shorter,
+        condensed version that redirects to the original URL. When a user clicks
+        on the shortened link, they are redirected to the intended destination.
       </p>
+      <hr />
+      <p>
+        Is it neccessary to create an account to use the URL Shortening service?
+      </p>
+      <hr />
+      <p>Are the shortened links permanent? Will they expire?</p>
+      <hr />
+      <p>Are there any limitations on the number of URLs I can shorten?</p>
+      <hr />
+      <p>Can I customize the shortened URLs to reflect my brand or content?</p>
+      <hr />
+      <p>Can I track the performance of my shortened URLs?</p>
+      <hr />
+      <p>
+        How secure is the URL shortening service? Are the shortened links
+        protected against spam or malicious activity?
+      </p>
+      <hr />
+      <p>What is a QR code and what can it do?</p>
+      <hr />
+      <p>
+        is there an API available for integrating the URL shortening service
+        into my own applications or websites?
+      </p>
+      <hr />
     </div>
   </body>
 </html>
